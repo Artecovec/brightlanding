@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brightlanding</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <!--[if lte IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+</head>
+<body>
+  <div class="main">
+        <header id="stick">
+            <div class="wrap">
+                <div class="head_1">
+                    <div class="logo">
+                        <a href="#"><img src="img/logo.png" alt="Brightlanding" /></a>
+                    </div>
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="#1" class="navi">Начало</a></li>
+                            <li><a href="#2" class="navi">Особенности</a></li>
+                            <li><a href="#3" class="navi">Проекты</a></li>
+                            <li><a href="#4" class="navi watch">Отзывы</a></li>
+                            <!--<li><a href="#5" class="navi watch">Статьи</a></li>-->
+                        </ul>
+                    </nav>
+                    <a href="#" class="button trigger">Заказать сейчас</a>
+                </div>
+                <div class="head_2">
+                    <nav class="menu_2" onClick="this.className = (this.className == 'menu_2' ? 'menu_3' : 'menu_2')">
+                    </nav>
+                    <nav class="main-menu one off" >
+                        <ul>
+                            <li><a href="#1" class="navi">Начало</a></li>
+                            <li><a href="#2" class="navi">Особенности</a></li>
+                            <li><a href="#3" class="navi">Проекты</a></li>
+                            <li><a href="#4" class="navi watch">Отзывы</a></li>
+                            <!--<li><a href="#5" class="navi watch">Статьи</a></li>-->
+                        </ul>
+                    </nav>
+                    <div class="logo logo1 one on">
+                        <a href="#"><p><img class="logo-img" src="img/logo.png" alt="Brightlanding" /></p></a>
+                    </div>
+                    <a href="#" class="button_small trigger">Заказать</a>
+                </div>
+            </div>
+        </header>
+        <!--<div class="bg"></div>-->
+        <div id="share" data-title="Поделиться">
+            <a href="#" class="share_icon facebook-1"></a>
+            <a href="#" class="share_icon twitter-1"></a>
+            <a href="#" class="share_icon vk-1"></a>
+            <a href="#" class="share_icon pinterest-1"></a>
+            <a href="#" class="share_icon google-1"></a>
+            <a href="#" class="share_icon livejournal-1"></a>
+        </div>
+        <div class="top">
+            <div class="wrap">
+                <h1 id="1">Пора заказать себе лэндинг</h1>
+                <h3 id="making">Научный подход к привлечению клиентов и росту продаж</h3>
+                <img class="spaceship bg1" id="ship-1" src="img/spaceship-1.png" alt="land 01" />
+                <img class="spaceship bg2" id="ship-2" src="img/spaceship-2.png" alt="land 02" />
+                <div class="have-time">
+                    <h2>Успей заказать сейчас!</h2>
+                    <p class="p1">Проект запущен! Первые 2 месяца мы делаем скидку 20% на создание лэндинга с уникальным дизайном.</p>
+                    <!--TIMER-->
+                    <div class="timer-area">
+                        <span class="finish">до окончания акции</span>
+                        <ul id="countdown">
+                            <li>
+                                <span class="days colon">00</span>
+                                <p class="timeRefDays">дней</p>
+                            </li>
+                            <li>
+                                <span class="hours colon">00</span>
+                                <p class="timeRefHours">часов</p>
+                            </li>
+                            <li>
+                                <span class="minutes colon">00</span>
+                                <p class="timeRefMinutes">минут</p>
+                            </li>
+                            <li>
+                                <span class="seconds">00</span>
+                                <p class="timeRefSeconds">секунд</p>
+                            </li>
+                           <!-- <span class="colon1">:</span>
+                            <span class="colon1">:</span>
+                            <span class="colon1">:</span>-->
+                        </ul>
+                    </div> <!-- end timer-area -->
+                </div><!--end have-time-->
+                <div id="order-land-page-cover"><a href="" class="button-1 trigger" id="order-land-page" >Заказать продающую страницу</a></div>
+                <div class="moon bg" id="planet-1"></div>
+            </div>
+        </div><!--end top-->
+        <div class="need-landing">
+            <div class="wrap">
+                <h2>Вам нужен лэндинг, если:</h2>
+                <figure class="cause">
+                    <p class="fig"><img class="need-img1" src="img/need-landing-item1.png" alt="reason 1" /></p>
+                    <figcaption>
+                        <p class="min-head">Вы хотите запустить новый товар или услугу</p>
+                        <p class="cause-description">
+                            Продающие страницы идеально подходит для оптовой и розничной торговли, сферы услуг, уникальных или дорогих товаров, обучающих программ, а также производителей.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="cause">
+                    <p class="fig"><img class="need-img2" src="img/need-landing-item2.png" alt="reason 2" /></p>
+                    <figcaption class="next-1">
+                        <p class="min-head">Вы используете рекламу для привлечения пользователей на сайт</p>
+                        <p class="cause-description">
+                            Создание продающей страницы позволяет повысить количество заказов на 30-60% при том же рекламном бюджете.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure class="cause">
+                    <p class="fig"><img class="need-img3" src="img/need-landing-item3.png" alt="reason 3" /></p>
+                    <figcaption class="next-1">
+                        <p class="min-head">У вас еще нет сайта или ваш сайт устарел и не приносит клиентов</p>
+                        <p class="cause-description">
+                            Грамотная продающая страница работает в 3-5 раз эффективнее, чем сайт-визитка, а подключаемые модули превращают лендинг в сайт.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div><!--end need-landing-->
+        <div class="order">
+            <div class="wrap">
+                <p class="order-p">
+                    <strong>Оставьте заявку на бесплатный звонок</strong> и мы ответим на все Ваши вопросы
+                </p>
+                <div id="call-cover"><a href="" id="call" class="trigger">Заказать звонок</a></div>
+            </div>
+        </div><!--end order-->
+        <div class="response1"></div>
+        <div class="response">
+            <div class="wrap">
+                <div class="left">
+                    <h2>
+                        Продающая страница полностью адаптирована для мобильных устройств
+                    </h2>
+                    <p>
+                        Мы проектируем продающие страницы так, чтобы они кооректно работали на большинстве популярных устройств — от смартфона до широкоформатного монитора.
+                    </p>
+                    <p class="fantom">
+                        Оптимизация работы и легкий в использовании интерфейс позволяют существенно повысить конверсию, а значит</br>и увеличить количество обращений клиентов.
+                    </p>
+                    <div id="try-action-cover"><a href="" class="button-2 trigger" id="try-action">Попробовать в действии</a></div>
+                </div>
+                <div class="right">
+                    <div class="hand-cover"><img id="hand" src="img/hand.png" alt="Hand" /></div>
+                    <div class="ipad-cover"><img class="bg3" id="ipad" src="img/iPad.png" alt="iPad" /></div>
+                    <div class="iphone-cover"><img class="bg4" id="iphone" src="img/iPhone.png" alt="iPhone" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages">
+            <div class="wrap">
+                <h2 id="2">Преимущества</h2>
+                <figure class="advantages-items">
+                    <p class="fig-1 unique"><img src="img/low-price1.png" alt="low price" /></p>
+                    <figcaption>
+                        <p class="advantages-head low-price">Низкая цена</p>
+                        <p class="advantages-description">Стоимость создания продающей страницы от 35 000 р.</p>
+                    </figcaption>
+                </figure>
+                <figure class="advantages-items">
+                    <p class="fig-1 unique"><img src="img/unique-design1.png" alt="unique design" /></p>
+                    <figcaption>
+                        <p class="advantages-head">Уникальный дизайн</p>
+                        <p class="advantages-description">Продающая страница от профессионалов Brightside</p>
+                    </figcaption>
+                </figure>
+                <figure class="advantages-items">
+                    <p class="fig-1 unique"><img src="img/switch-modules1.png" alt="switch modules" /></p>
+                    <figcaption>
+                        <p class="advantages-head">Подключаемые модули</p>
+                        <p class="advantages-description">Из лендинга можно сделать полноценный сайт</p>
+                    </figcaption>
+                </figure>
+                <figure class="advantages-items">
+                    <p class="fig-1 unique"><img src="img/short-term1.png" alt="short term" /></p>
+                    <figcaption>
+                        <p class="advantages-head">Краткие сроки разработки</p>
+                        <p class="advantages-description">От 3 дней до 1 месяца</p>
+                    </figcaption>
+                </figure>
+                <figure class="advantages-items last-item">
+                    <p class="fig-1 unique"><img src="img/selling-texts1.png" alt="selling texts" /></p>
+                    <figcaption>
+                        <p class="advantages-head">Продающие тексты</p>
+                        <p class="advantages-description">Профессиональные копирайтеры пишут круто</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div><!--end advantages-->
+        <div class="order">
+            <div class="wrap">
+
+                <p class="order-p1">
+                    <strong>Возникли вопросы?</strong> Не стесняйтесь, задайте их нашему менеджеру!
+                </p>
+                <div id="call1-cover"><a href="" id="call1" class="trigger">Задать вопрос менеджеру</a></div>
+            </div>
+        </div><!--end order-1-->
+        <div class="projects">
+            <div class="wrap1">
+                <h2 class="projects-h2" id="3">Готовые проекты</h2>
+                <div class="projects-content">
+                    <div class="projects-item normal">
+                        <img src="image/Projects-1.jpg" alt="project1" class="projects-item-img">
+                        <a href="" class="project-item-link trigger-1">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item normal">
+                        <img src="image/Projects-2.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item normal">
+                        <img src="image/Projects-3.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item normal">
+                        <img src="image/Projects-4.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item normal">
+                        <img src="image/Projects-2.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item normal">
+                        <img src="image/Projects-6.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item wide">
+                        <img src="image/Projects-7.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item normal">
+                        <img src="image/Projects-8.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item normal">
+                        <img src="image/Projects-9.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item wide">
+                        <img src="image/Projects-10.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projects-item normal">
+                        <img src="image/Projects-11.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div><div class="projects-item normal">
+                    <img src="image/Projects-12.jpg" alt="project1" class="projects-item-img">
+                    <a href="#" class="project-item-link">
+                        <div class="project-details">
+                            <div class="switch"><div class="switch-in"></div></div>
+                            <div class="project-details-name">Digity Group</div>
+                        </div>
+                    </a>
+                    </div><div class="projects-item normal">
+                        <img src="image/Projects-13.jpg" alt="project1" class="projects-item-img">
+                        <a href="#" class="project-item-link">
+                            <div class="project-details">
+                                <div class="switch"><div class="switch-in"></div></div>
+                                <div class="project-details-name">Digity Group</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="projects-h3">Проекты созданы с использованием технологий</h3>
+                <h3 class="new-project-h3">Наши технологии</h3>
+                <div class="technologies">
+                    <figure class="techno">
+                        <p class="fig"><img class="technology-item" src="img/technology-item-1.png" alt="" /></p>
+                        <figcaption>
+                            <p class="techno-head">Node JS</p>
+                            <p class="techno-description">
+                                Программная платформа для работы с javascript. Node Js ассинхронная среда обработки запросов, что позволяет увеличивать скорость доступа пользователей к вашему сайту. Скорость доступа возрастает минимум в 2 раза.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="techno">
+                        <p class="fig"><img class="technology-item" src="img/technology-item-2.png" alt="" /></p>
+                        <figcaption>
+                            <p class="techno-head">Mongo DB</p>
+                            <p class="techno-description">
+                                Mongo DB — документо-ориентированная система управления базами данных с открытым исходным кодом, не требующая описания схемы таблиц. Дает большой выигрыш в скорости работы для высоконагрузочных проектов.
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="techno last-item">
+                        <p class="fig"><img class="technology-item" src="img/technology-item-3.png" alt="" /></p>
+                        <figcaption>
+                            <p class="techno-head">Nginx</p>
+                            <p class="techno-description">
+                                Простой, быстрый и надёжный сервер, не перегруженный функциями. По данным Netcraft на август 2014 года, число сайтов, обслуживаемых nginx, превышает 135 миллионов, что делает его третьим по популярности веб-сервером в мире.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="left-order-cover"><a href="" class="button-1 left-order trigger">Оставить заявку</a></div>
+
+            </div>
+        </div><!--end projects-->
+        <div class="reviews" >
+            <div class="wrap">
+                <h2 id="4">Отзывы клиентов</h2>
+                    <div class="slider">
+                        <a id="slide-left" class="prev"></a>
+                        <div class="slide">
+                        <img class="slide-image" src="img/slider-image.png" alt="" data-position="150,150" data-in="bottomRight" data-out="topRight" />
+                        <div class="slider-text" data-position="150,450" data-in="fadeRight" data-out="scrollFadeRight">
+                            <p class="client-name">Alexander Ivanov</p>
+                            <p class="client-company">Top manager of Sony corp.</p>
+                            <p class="text-review">
+                                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                            </p>
+                        </div>
+                        </div>
+                        <div class="slide">
+                            <img class="slide-image" src="img/slider-image.png" alt="" data-position="150,150" data-in="bottomRight" data-out="topRight" />
+                            <div class="slider-text" data-position="150,450" data-in="fadeRight" data-out="scrollFadeRight">
+                                <p class="client-name">Alexander Ivanov</p>
+                                <p class="client-company">Top manager of Sony corp.</p>
+                                <p class="text-review">
+                                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                                </p>
+                            </div>
+                        </div>
+                        <a id="slide-right" class="next"></a>
+                    </div>
+               <div id="show-all-cover"><a href="" class="button-2 trigger-0" id="show-all">Написать отзыв</a></div>
+            </div>
+        </div><!--end review-->
+        <div class="fill-brief">
+            <div class="wrap"></div>
+        </div><!--end fill-brief-->
+        <div class="land">
+            <div class="wrap">
+                <h2>Профессиональная<br>продающая страница</h2>
+                <p class="cost" id="price">от 35 000 <span class="rouble">q</span></p>
+                <div id="fill-cover"><a href="#" class="button-1 trigger" id="fill">Заполнить бриф</a></div>
+                <p class="cost" id="price1">Заполните бриф на разработку прямо сейчас и узнайте стоимость продающей страницы для вас!</p>
+                <div class="land-content">
+                    <img class="spaceship bg6" id="ship-3" src="img/spaceship-3.png" alt="spaceship" />
+                    <img class="spaceship bg7" id="ship-4" src="img/spaceship-4.png" alt="spaceship" />
+                    <a href="" class="why_good bg11"><span>Почему лендинг </br>так хорош?</span></a>
+                  <!--  <a href="" class="why_good bg7 spaceship" id="ship-4"><span>Почему лендинг </br>так хорош?</span></a>-->
+                    <img class="spaceship bg8" id="ship-5" src="img/spaceship-5.png" alt="spaceship" />
+                    <img class="spaceship bg9" id="ship-6" src="img/spaceship-6.png" alt="spaceship" />
+                    <img class="spaceship bg10" id="ship-7" src="img/spaceship-7.png" alt="spaceship" />
+                    <img class="bubble bubble-2 bg10" src="img/bubble-2.png" alt="" />
+                    <img id="ships" src="img/ships.png" alt="spaceship">
+                </div>
+                <div class="bg5" id="planet-2"></div>
+            </div>
+        </div><!--end land-->
+        <footer class="foot">
+            <div class="wrap">
+                <a href="" class="why_good1"><span>Почему лендинг так хорош?</span></a>
+                <p id="copyright">&copy; 2014 Brightside LLC</p>
+                <div id="socials">
+                    <p>Мы в соц. сетях</p>
+                    <a href="#" class="social_icon facebook"></a>
+                    <a href="#" class="social_icon vk"></a>
+                    <a href="#" class="social_icon instagram"></a>
+                    <a href="#" class="social_icon twitter"></a>
+                </div>
+                <a href="" id="company-1">Создание сайтов</a>
+                <a href="" id="company">BRIGHTSIDE</a>
+
+                <a href="" class="scrollup">Наверх</a>
+            </div><!--end foot-->
+            <div class="modal" id="test-modal" style="display: none"> <!-- окно -->
+                <span class="close"></span>
+                <div class="modal-head"></div>
+                    <h2>Закажите обратный звонок</h2>
+                    <p class="info">Введите ваш телефон и мы перезвоним вам в течение рабочего дня и всё всё расскажем</p>
+                <ul>
+                    <li>
+                        <p class="person your-name">Ваше имя</p>
+                        <input type="text" class="login_data" required value="" placeholder="Иван Петров" />
+                    </li>
+                    <li>
+                        <p class="person your-phone">Телефон</p>
+                        <input type="text" class="login_data" required value="" placeholder="+7 902 000 03 30" />
+                    </li>
+                    <li>
+                        <p class="person your-mail">E-mail</p>
+                        <input type="text" class="login_data" required value="" placeholder="mail@mail.ru" />
+                    </li>
+                </ul>
+                <div class="send-cover"><a href="#" class="send">Заказать звонок</a></div>
+                <p class="or">Или позвоните нам по телефону:</p>
+                <p class="number">+7 920 720 88 88</p>
+            </div>
+            <div class="modal" id="test-modal-1" style="display: none"> <!-- окно -->
+                <span class="close"></span>
+                <div class="modal-head"></div>
+                <h2>Закажите обратный звонок</h2>
+                <p class="info">Введите ваш телефон и мы перезвоним вам в течение рабочего дня и всё всё расскажем</p>
+                <ul>
+                    <li>
+                        <p class="person your-name">Ваше имя</p>
+                        <input type="text" class="login_data" required value="" placeholder="Иван Петров" />
+                    </li>
+                    <li>
+                        <p class="person your-post">Должность</p>
+                        <input type="text" class="login_data" required value="" placeholder="Должность" />
+                    </li>
+                    <li>
+                        <p class="person your-mail">E-mail</p>
+                        <input type="text" class="login_data login_data"  required value="" placeholder="mail@mail.ru" />
+                    </li>
+                    <li>
+                        <p class="person your-comment">Отзыв</p>
+                        <textarea name="comment" class="login_data login_data_text" placeholder="Текст отзыва"></textarea>
+                    </li>
+                </ul>
+                <div class="send-cover"><a class="send">Отправить отзыв</a></div>
+                <p class="or">Или позвоните нам по телефону:</p>
+                <p class="number">+7 920 720 88 88</p>
+            </div>
+            <div id="frame-modal"  style="display: none"> <!-- окно -->
+                <div class="frame-head">
+                    <div class="modal-head1"></div>
+                    <span class="close"></span>
+                    <h2>Топ Комплект — Проектные двери</h2>
+                    <p class="info"><small>Результат:</small> Увеличение продаж проектных дверей на 23%</p>
+                </div>
+                <div class="eshediv"></div>
+                <div class="frame-container ">
+                    <div class="frame-in"></div>
+                </div>
+                <a id="frame-left"></a>
+                <a id="frame-right"></a>
+            </div>
+        </footer>
+    </div><!--end main-->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.fractionslider.js"></script>
+    <script src="js/jquery.the-modal.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

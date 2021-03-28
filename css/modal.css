@@ -1,0 +1,380 @@
+.themodal-lock {
+    /* when modal is opened we're removing scrollbars from the main content */
+    overflow: hidden;
+}
+.themodal-overlay {
+    /* overlay will stay fixed and will take all the space available */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100000000;
+    /* allow one-finger iPad scrolling */
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+/* fix for iPad glitches */
+.themodal-overlay > * {
+    -webkit-transform: translateZ(0px);
+}
+.themodal-overlay {
+    background: rgba(5, 11, 16, 0.8);
+    /* IE6–IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = #7F000000, endColorstr = #7F000000);
+    zoom: 1;
+}
+.modal {
+    position: absolute;
+    border-radius: 4px;
+    letter-spacing: 0;
+}
+#test-modal {
+    width: 513px;
+    height: 542px;
+    background: #fff;
+    left:50%;
+    top:50%;
+}
+.modal-head {
+    color: #000;
+    background: -ms-linear-gradient(top, #ffdc39 0%,#ffc106 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdc39', endColorstr='#ffc106');
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffdc39), to(#ffc106));
+    background: -moz-linear-gradient(top,  #ffdc39,  #ffc106);
+    background: -o-linear-gradient(top,  #ffdc39,  #ffc106);
+    display: block;
+    position: relative;
+    height: 5px;
+    width: 513px;
+    border-radius: 4px 4px 0 0;
+    margin:  0 0 25px;
+}
+.modal h2 {
+    margin: 0 0 7px 0;
+    padding: 0;
+    font-size: 18pt;
+    font-weight: 700;
+    text-align: center;
+}
+.person, .info {
+    margin: 0;
+}
+.person, .login_data {
+    display: inline-block;
+}
+.person {
+    padding: 0;
+    font-weight: 600;
+}
+.your-name {
+    margin: 39px 20px 27px 37px;
+}
+.your-phone {
+    margin: 19px 29px 27px 39px;
+}
+.your-mail {
+    margin: 20px 53px 35px 37px;
+}
+.info {
+    line-height: 18pt;
+    font-size: 11.5pt;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+    padding: 8px 30px 25px;
+}
+.login_data {
+    padding: 2px 12px;
+    width: 306px;
+    height: 38px;
+    font-size: 12.5pt;
+    background: #f7f7f7;
+    border: none;
+    box-shadow: inset 0 -2px 5px rgba(255,255,255,0.7), inset 0 1px 4px rgba(0,0,0,0.3);
+}
+.close {
+    width: 27px;
+    height: 27px;
+    display: block;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    cursor: pointer;
+    background: url(../img/close-button.png) no-repeat;
+}
+.send {
+    background: -ms-linear-gradient(top, #00c0ff 0%,#006abb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00c0ff', endColorstr='#006abb');
+    background: -webkit-gradient(linear, left top, left bottom, from(#00c0ff), to(#006abb));
+    background: -moz-linear-gradient(top,  #00c0ff,  #006abb);
+    background: -o-linear-gradient(top,  #00c0ff,  #006abb);
+    border-radius: 4px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #156884;
+    text-decoration: none;
+    font-size: 13.5pt;
+    font-weight: 700;
+    box-shadow: 0 3px #074876;
+    display: block;
+    position: relative;
+    width: 432px;
+    text-align: center;
+    padding: 14px 0;
+}
+.send-cover {
+    width:432px;
+    height: 55px;
+    background: rgba(0,0,0,0);/*для IE9*/
+    position: relative;
+    margin: 13px 0 29px 40px;
+}
+.send-cover:hover {
+    cursor: pointer;
+}
+.send:hover, .send-cover:hover .send {
+    top: 3px;
+    box-shadow: none;
+}
+.or, .number {
+    text-align: center;
+    color: #767676;
+    font-size: 9.002pt;
+    margin: 0;
+}
+.or {
+    text-transform: uppercase;
+    padding: 0 0 4px 0;
+}
+.number {
+    font-weight: 700;
+}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+/**************************************
+FRAME-MODAL
+**************************************/
+.modal-head1 {
+    min-width: 1000px;
+    max-width: 100.9%;
+    display: block;
+    position: relative;
+    height: 1px;
+    border-radius: 4px 4px 0 0;
+    margin: -5px 0 0 0;
+}
+.modal-head1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -5px;
+    right: -5px;
+    border: 2.5px solid #ffc106;
+    border-radius: 4px 4px 0 0 ;
+}
+#frame-modal, #frame-modal-2 {
+    min-width: 1000px;
+    max-width: 80%;
+    height: 95%;
+    background: #fff;
+    margin: 1% auto 0;
+    vertical-align: middle;
+    position: relative;
+    border-radius: 4px;
+    letter-spacing: 0;
+    border: 5px solid #fff;
+}
+#frame-modal h2 {
+    line-height: 1.7em;
+}
+#frame-left, #frame-right {
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    top: 45%;
+    opacity: 0.8;
+}
+#frame-left:hover, #frame-right:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+#frame-left {
+    background: url(../img/arrow-left-1.png) no-repeat;
+    left: -9.3%;
+}
+#frame-right {
+    background: url(../img/arrow-right-1.png) no-repeat;
+    right: -9.3%;
+    left: auto;
+}
+#frame-modal h2{
+    text-align: center;
+    margin: 0;
+    padding-top: 1px;
+}
+.frame-head {
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    min-width: 1000px;
+    max-width: 100%;
+    z-index: 10;
+}
+#frame-modal .info, #frame-modal .info small {
+    line-height: 18pt;
+    font-size: 10.14pt;
+    font-weight: 600;
+    padding: 0 30px 14px;
+}
+#frame-modal .info small {
+    background: url(../img/modal-logo.png) no-repeat left;
+    color: #00c0ff;
+    padding: 0 5px 0 30px;
+    font-weight: 700;
+}
+.eshediv {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    height: 9%;
+}
+.frame-container {
+    width: 100%;
+    height: 91%;
+    overflow-x: hidden;
+    position: relative;
+    box-shadow: inset 0 0 13px rgba(0,0,0,0.1);
+}
+.frame-container::-webkit-scrollbar {
+    width: 0.9em;
+}
+.frame-container::-webkit-scrollbar-track {
+    -webkit-background-color: rgba(255,255,255,0.5);
+}
+.frame-container::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+}
+.frame-container::-webkit-scrollbar-thumb:hover {
+    background-color: #959595;
+}
+.frame-in {
+    background: url(../image/frame-1.jpg) no-repeat top center;
+    width: 100%;
+    height: 3520px;
+}
+@media screen and (min-width: 1500px) and (max-width: 1650px) {
+    #frame-left {left: -9.6%;}
+    #frame-right {right: -9.6%;}
+}
+@media screen and (min-width: 1350px) and (max-width: 1500px) {
+    #frame-left {left: -10%;}
+    #frame-right {right: -10%;}
+}
+@media screen and (min-width: 1240px) and (max-width: 1350px) {
+    #frame-left {left: -10.5%;}
+    #frame-right {right: -10.5%;}
+}
+@media screen and (min-width: 1200px) and (max-width: 1240px) {
+    #frame-left {left: -9.9%;}
+    #frame-right {right: -9.9%;}
+}
+@media screen and (min-width: 10px) and (max-width: 1200px) {
+    #frame-left {left: 15px;}
+    #frame-right {right: 15px;}
+}
+@media screen and (min-height: 850px) and (max-height: 900px){
+    .eshediv {height: 10%;}
+    .frame-container {height: 90%;}
+}
+@media screen and (min-height: 800px) and (max-height: 850px){
+    .eshediv {height: 10.6%;}
+    .frame-container {height: 89.4%;}
+}
+@media screen and (min-height: 750px) and (max-height: 800px){
+    .eshediv {height: 11.2%;}
+    .frame-container {height: 88.8%;}
+}
+@media screen and (min-height: 700px) and (max-height: 750px){
+    .eshediv {height: 11.8%;}
+    .frame-container {height: 88.2%;}
+}
+@media screen and (min-height: 650px) and (max-height: 700px){
+    .eshediv {height: 12.4%;}
+    .frame-container {height: 87.6%;}
+}
+@media screen and (min-height: 600px) and (max-height: 650px){
+    .eshediv {height: 13%;}
+    .frame-container {height: 87%;}
+}
+@media screen and (min-height: 550px) and (max-height: 600px){
+    .eshediv {height: 13.8%;}
+    .frame-container {height: 86.2%;}
+}
+@media screen and (min-height: 500px) and (max-height: 550px){
+    .eshediv {height: 14.7%;}
+    .frame-container {height: 85.3%;}
+}
+@media screen and (min-height: 450px) and (max-height: 500px){
+    .eshediv {height: 16%;}
+    .frame-container {height: 84%;}
+}
+@media screen and (min-height: 400px) and (max-height: 450px){
+    .eshediv {height: 18%;}
+    .frame-container {height: 82%;}
+}
+@media screen and (min-height: 350px) and (max-height: 400px){
+    .eshediv {height: 22%;}
+    .frame-container {height: 78%;}
+}
+@media screen and (min-height: 10px) and (max-height: 350px){
+    .eshediv {height: 26%;}
+    .frame-container {height: 73%;}
+}
+@media screen and (min-height: 250px) and (max-height: 300px){
+    .eshediv {height: 30%;}
+    .frame-container {height: 70%;}
+}
+@media screen and (min-height: 220px) and (max-height: 250px){
+    .eshediv {height: 36%;}
+    .frame-container {height: 64%;}
+}
+@media screen and (min-height: 190px) and (max-height: 220px){
+    .eshediv {height: 41.5%;}
+    .frame-container {height: 59.5%;}
+}
+@media screen and (min-height: 150px) and (max-height: 190px){
+    .eshediv {height: 48%;}
+    .frame-container {height: 52%;}
+}
+@media screen and (min-height: 10px) and (max-height: 150px){
+    .eshediv {height: 61%;}
+    .frame-container {height: 39%;}
+}
+.themodal-overlay {
+    left: 0 !important;
+}
+/*****TEST-MODAL-1*******/
+#test-modal-1 {
+    width: 513px;
+    height: 642px;
+    background: #fff;
+    left:50%;
+    top:50%;
+}
+.your-post {
+    margin: 19px 13px 27px 35px;
+}
+.your-comment {
+    margin: 0px 49px 27px 37px;
+    vertical-align: top;
+}
+.login_data_text {
+    height: 100px;
+}
+
+
+
+
+
